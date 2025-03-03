@@ -1,5 +1,9 @@
 {
   "type": "module",
+  "scripts": {
+    "start": "node index.js", 
+    "build": "npm install"
+  },
   "dependencies": {
     "@google/generative-ai": "^0.22.0",
     "bcrypt": "^5.1.1",
