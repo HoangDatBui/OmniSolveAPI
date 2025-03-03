@@ -15,7 +15,6 @@ const db = knex({
     client: 'pg',
     connection: {
         host: 'postgresql://omnisolve_user:b2d3OqNxZYnPendsqZ7Yv0jAt7rmQorX@dpg-cv2o4uvnoe9s73b8s600-a/omnisolve',
-        ssl: true,
     }
 });
 
