@@ -11,13 +11,19 @@ import { limitationFunction, handleAPICall } from './controllers/limitation.js';
 const PORT = process.env.PORT || 4000;
 const saltRounds = 10;
 
+// Updated database configuration with SSL
 const db = knex({
     client: 'pg',
     connection: {
-        host: 'localhost',
-        user: 'postgres',
-        password: 'CoccbietMK1@',
-        database: 'aitools'
+        host: 'omnisolve-omnisolve.l.aivencloud.com',
+        port: 27964,
+        user: process.env.USER,
+        password: process.env.PASSWORD,
+        database: 'defaultdb',
+        ssl: {
+            rejectUnauthorized: true,
+            ca: process.env.CA
+        }
     }
 });
 

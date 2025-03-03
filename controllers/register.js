@@ -24,7 +24,7 @@ export const registerFunction = (req, res, db, bcrypt, saltRounds) => {
             .then(trx.commit)
             .catch(trx.rollback)
     })
-        .catch(err => err.status(400).json("unable to register"))
+        .catch(err => res.status(400).json("unable to register"))
 }
 
 export default { registerFunction }
