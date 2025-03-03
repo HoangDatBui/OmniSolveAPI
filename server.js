@@ -14,7 +14,10 @@ const saltRounds = 10;
 const db = knex({
     client: 'pg',
     connection: {
-        host: 'postgres://avnadmin:AVNS_7-8I_H9qF4Ghe92cbjF@omnisolve-omnisolve.l.aivencloud.com:27964/defaultdb?sslmode=require',
+        host: 'omnisolve-omnisolve.l.aivencloud.com',
+        user: 'avnadmin',
+        password: 'AVNS_7-8I_H9qF4Ghe92cbjF',
+        database: 'defaultdb'
     }
 });
 
